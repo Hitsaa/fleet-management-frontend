@@ -1,0 +1,67 @@
+<div style="height:100%">
+    <mat-toolbar color="primary">
+        <button mat-icon-button (click)="opened=!opened">
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span style="color: #FEB154; padding: 0px 5px 0px 5px">Fleet</span> <span style="color:#00A0DF">Management</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button>
+          <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button>
+          <mat-icon>share</mat-icon>
+        </button>
+    </mat-toolbar>
+    <mat-sidenav-container>
+        <mat-sidenav [(opened)] = "opened">
+            <div>
+                <div class="side-nav-items">
+                    <mat-icon class="side-nav-icons">home</mat-icon>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+            <div>
+                <div class="side-nav-items" (click) = "to_explore('form')">
+                    <mat-icon class="side-nav-icons">article</mat-icon>
+                    <span>Forms</span>
+                    <mat-icon class="expand-icons" *ngIf="id !='form'">chevron_right</mat-icon>
+                    <mat-icon class="expand-icons" *ngIf="id=='form'">expand_more</mat-icon>
+                </div>
+            </div>
+            <div>
+                <div class="side-nav-items" (click) = "to_explore('filter')">
+                    <mat-icon class="side-nav-icons">desktop_windows</mat-icon>
+                    <span>UI Filters</span>
+                    <mat-icon class="expand-icons" *ngIf="id!='filter'">chevron_right</mat-icon>
+                    <mat-icon class="expand-icons" *ngIf="id=='filter'">expand_more</mat-icon>
+                </div>
+            </div>
+            <div>
+                <div class="side-nav-items">
+                    <mat-icon class="side-nav-icons">widgets</mat-icon>
+                    <span>Widgets</span>
+                </div>
+            </div>
+            <div>
+                <div class="side-nav-items">
+                    <mat-icon class="side-nav-icons">pie_chart</mat-icon>
+                    <span>Charts</span>
+                </div>
+            </div>
+            <div class="side-nav-items" (click) = "to_explore('table')">
+                <mat-icon class="side-nav-icons">table_view</mat-icon>
+                <span>Tables</span>
+                <mat-icon class="expand-icons" *ngIf="id!='table'">chevron_right</mat-icon>
+                <mat-icon class="expand-icons" *ngIf="id=='table'">expand_more</mat-icon>
+            </div>
+            <div class="side-nav-items" (click) = "to_explore('page')">
+                <mat-icon class="side-nav-icons">pages</mat-icon>
+                <span>Pages</span>
+                <mat-icon class="expand-icons" *ngIf="id!='page'">chevron_right</mat-icon>
+                <mat-icon class="expand-icons" *ngIf="id=='page'">expand_more</mat-icon>
+            </div>
+        </mat-sidenav>
+        <mat-sidenav-content>Main</mat-sidenav-content>
+    </mat-sidenav-container>
+
+</div>
