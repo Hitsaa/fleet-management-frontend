@@ -11,6 +11,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
   opened = true;
   id:any | null;
+  value:any;
   ngOnInit(): void {
   }
   to_explore(id:any){

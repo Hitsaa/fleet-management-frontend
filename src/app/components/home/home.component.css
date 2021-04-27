@@ -20,6 +20,52 @@
     direction: ltr;
 }
 
+/* .mat-drawer-backdrop {
+} */
+
+
+.button{
+    background: none;
+    border: none;
+}
+
+.toolbar-icons{
+    color: white;
+    font-size:17px;
+    height:0px;
+}
+
+.set-input{
+    width: 180px;
+}
+
+input{
+    width: 180px;
+    height: 25px;
+    border: solid 1px #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    padding: 0px 15px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;                        
+    align-items: center;
+    letter-spacing: 0.2px;
+    color: #8B8B8B;
+
+}
+
+input:empty {
+    font-family: FontAwesome,Lato;
+    font-size: 14px;
+    font-style: normal;      
+    text-decoration: inherit;
+    word-spacing: 1px;
+    font-weight: 500;
+}
+
+
 .example-spacer {
     flex: 1 1 auto;
 }
@@ -27,21 +73,57 @@
 .mat-toolbar-row, .mat-toolbar-single-row {
     display: flex;
     box-sizing: border-box;
-    padding: 0 16px;
+    padding: 0 8px;
     width: 100%;
     flex-direction: row;
     align-items: center;
     background: #1A2732;
 }
 
-.mat-sidenav-container{
-    height: 95%;
+.mat-form-field-appearance-legacy .mat-form-field-infix {
+    padding: 0 0 !important;
+}
 
+.mat-form-field-infix {
+    border-top: 0 !important;
+    display: block;
+    position: relative;
+    flex: auto;
+    min-width: 0;
+    width: none;
+}
+
+.mat-form-field-flex {
+    display: inline-flex;
+    align-items: baseline;
+    box-sizing: none !important;
+    width: 100%;
+}
+
+.mat-form-field {
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 1.125;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    letter-spacing: normal;
+    /* border: solid 1px; */
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    margin:0 20px
+}
+
+.mat-sidenav-container{
+    height: 90%;
 }
 
 .mat-sidenav{
     background: #394A59;
     width: 200px;
+}
+
+.mat-sidenav-content{
+    background: none;
 }
 
 .side-nav-items{
@@ -76,4 +158,19 @@
     font-size: 15px;
     height: 10px;
     width: 20px;
+}
+
+.profile{
+    border: solid 0.5px white;
+    height: 30px;
+    width: 30px;
+    border-radius: 16px;
+}
+
+.profile-photo{
+    height: 30px;
+    width: 30px;
+}
+.mat-drawer-backdrop .mat-drawer-shown {
+    background-color: white;
 }
